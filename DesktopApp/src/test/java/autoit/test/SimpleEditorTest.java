@@ -10,10 +10,10 @@ import static autoit.utils.Constant.TEST_TEXT;
  * @author d.gilfanova
  */
 
-public class CloseTest extends TestBase {
+public class SimpleEditorTest extends TestBase {
 
     @Test
-    public void calculatorTest() throws InterruptedException {
+    public void check_insert_text_success() throws InterruptedException {
         applicationManager.getOperationHelper().putText(TEST_TEXT);
         String text = applicationManager.getOperationHelper().getText();
         Assert.assertEquals(TEST_TEXT, text);
